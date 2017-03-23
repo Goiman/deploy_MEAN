@@ -1,0 +1,9 @@
+<div class="wrapper" ng-controller="sessionController">
+  <p>Enter a username to continue</p>
+  <input type="text" ng-model="user.name">
+  <button type="submit" ng-click="login()">Enter</button>
+
+    <ul ng-if="errors.length > 0">
+      <li ng-repeat="error in errors">{{error}}</li>
+    </ul>
+</div>

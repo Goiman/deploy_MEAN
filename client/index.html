@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>MEAN Wall</title>
+    <style media="screen">
+      .wrapper{
+        border: 1px solid black;
+        width: 500px;
+        margin: 15px;
+        padding: 15px;
+        height: 260px;
+      }
+      .btn{
+        height: 30px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        color:white;
+        background-color: #94DAFB;
+        border: 0;
+      }
+      .button{
+        height: 30px;
+        border-radius: 5px;
+        color:white;
+        background-color: #94DAFB;
+        border: 0;
+      }
+      .messages{
+        outline: 1px solid green;
+        margin: 15px;
+        padding: 15px
+      }
+      .top{
+        border-bottom: 2px solid black;
+        margin: 10px;
+      }
+      p{
+        margin: 0;
+        /*display: inline-block;*/
+      }
+      h3{
+        margin-right: 130px;
+        display: inline-block;
+      }
+      h4{
+        display: inline-block;
+      }
+      h5{
+        color: orange;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="./controllers/session.js"></script>
+    <script src="./factories/session.js"></script>
+  </head>
+  <body>
+    <div ng-view="">
+
+    </div>
+  </body>
+</html>
